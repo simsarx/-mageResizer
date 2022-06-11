@@ -18,13 +18,13 @@ def resize_bulk_images():
        
             f, e = os.path.splitext(img_dir + img)
             imResize = im.resize((imageWidth,imageWidth), Image.ANTIALIAS)
-            imResize.save(f + '_resized.webp', quality=100)
+            imResize.save(f + '_structured.webp', quality=100)
             
             
-print('Bulk images resizing started...')
+print('Bulk images re-structure started...')
 
 
 resize_bulk_images()
 
 
-print('Bulk images resizing finished...')
+print('Bulk images re-structure finished...')
